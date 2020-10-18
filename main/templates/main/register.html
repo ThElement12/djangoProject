@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+{% block body %}
+<div class="card shadow-lg o-hidden border-0 my-5">
+    <div class="card-body p-0">
+        <div class="row">
+            <div class="col-lg-6 col-xl-6 offset-lg-3 offset-xl-3">
+                <div class="p-5">
+                    <div class="text-center">
+                        <h4 class="text-dark mb-4">Crear una cuenta</h4>
+                    </div>
+                    <form method="POST" class="user">
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Nombre" name="first_name"></div>
+                            <div class="col-sm-6"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Apellido" name="last_name"></div>
+                        </div>
+                        <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Correo" name="email"></div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Constraseña" name="password"></div>
+                            <div class="col-sm-6"><input class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" placeholder="Repita Contraseña" name="password_repeat"></div>
+                        </div><button class="btn btn-primary btn-block text-white btn-user" type="submit">Registrarse</button>
+                        <hr>
+                    </form>
+                    <div class="text-center"></div>
+                    <div class="text-center"><a class="small" href="/">Ya tienes una cuenta? Inicia Sesión!</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
